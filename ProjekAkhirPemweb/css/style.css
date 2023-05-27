@@ -24,7 +24,7 @@ main {
 
 .navbar {
     padding: 20px 0 20px 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
 }
 
@@ -149,3 +149,62 @@ main {
     color: var(--text-color);
     filter: drop-shadow(10px 10px 10px var(--background-color));
 }
+
+.wrap {
+    position: relative;
+}
+
+.mission {
+    display: flex;
+    width: 100%;
+    top: -50px;
+    position: absolute;
+    background-color: var(--secondary-color);
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 0 0;
+}
+
+.mission .container {
+    display: flex;
+    padding: 50px 0 50px 0;
+    justify-content: center;
+    column-gap: 150px;
+}
+
+.mission .container .img-mission {
+    width: 400px;
+    border-radius: 50px;
+    filter: drop-shadow(10px 10px 10px var(--background-color));
+}
+
+.mission .container .box-info {
+    display: flex;
+    color: var(--text-color);
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+.mission .container .box-info h1 {
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.mission .container .box-info p {
+    font-size: 20px;
+    font-weight: regular;
+}
+
+.mission .container .box-info .mission-content-2 h1{
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.mission .container .box-info .mission-content-2 .second-title {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
