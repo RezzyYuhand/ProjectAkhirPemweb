@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #469846;
+    --secondary-color: #10281b;
+    --background-color: #111111;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("../img/mainbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 50px;
+
+}
+
+.navbar {
+    padding: 20px 0 20px 0;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar .scrolling-active {
+    background-color: var(--secondary-color);
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .box-navbar .logo {
+    width: 170px;
+}
+
+.navbar .box-navbar .menu {
+    display: flex;
+    column-gap: 50px;
+}
+
+.navbar .box-navbar .menu li {
+    list-style: none;
+}
+
+.navbar .box-navbar .menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+}
+
+.navbar .box-navbar .menu .active a {
+    background-color: var(--primary-color);
+}
+
+.navbar .box-navbar .menu li a:hover {
+    background-color: var(--primary-color);
+}
+
+.judul h1{
+    width: 250px;
+    position: absolute; top: 100px; left: 500px;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-weight: semi-bold;
+    color:black;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 10px var(--background-color));
+}
+
+/* .art1 {
+    display: flex;
+    width: 100%;
+    top: 192px;
+    position: absolute;
+    background-color: var(--primary-color);
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 0 0;
+} */
+
+.art1 h1{
+    color: black;
+    font-size: 40px;
+    position: absolute; top: 25px; left: 15px;
+}
+
+.art1 p {
+    color: #000;
+    font-size: 25px;
+    position: absolute; top: 350px; left: 15px;
+}
