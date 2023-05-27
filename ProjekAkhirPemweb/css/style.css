@@ -151,11 +151,14 @@ main {
 }
 
 .wrap {
+    background-color: var(--secondary-color);
     position: relative;
+    height: 75vh;
 }
 
 .mission {
     display: flex;
+    flex-direction: column;
     width: 100%;
     top: -50px;
     position: absolute;
@@ -206,5 +209,84 @@ main {
 .mission .container .box-info .mission-content-2 .second-title {
     text-decoration: underline;
     color: var(--primary-color);
+}
+
+.information {
+    display: flex;
+    background-color: var(--primary-color);
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.information .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+
+.information .container .info-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.information .container .info-title h1 {
+    color: var(--secondary-color);
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.information .container .info-title p{
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.information .container .box-info-card .info-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 160px;
+}
+
+.information .container .box-info-card .info-card .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    border-radius: 25px;
+    border-width: 4px;
+    padding: 20px 40px 20px 40px;
+    font-weight: semi-bold;
+}
+
+.information .container a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 5px 30px 5px 30px;
+    filter: drop-shadow(5px 5px 5px var(--background-color));
+}
+
+.information .container a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    background-color: var(--secondary-color);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-weight: semi-bold;
 }
 
