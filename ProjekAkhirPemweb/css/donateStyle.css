@@ -102,8 +102,37 @@
 .wrapper .container .box-donate .box-support .box-nama {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 500px;
     gap: 5px;
+}
+
+.wrapper .container .box-donate .box-support .box-nama label{
+    font-size: 20px;
+}
+
+.wrapper .container .box-donate .box-support .box-nama input{
+    font-size: 20px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #3b5748;
+}
+
+.wrapper .container .box-donate .box-support .box-amount {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 5px;
+}
+
+.wrapper .container .box-donate .box-support .box-amount label{
+    font-size: 20px;
+}
+
+.wrapper .container .box-donate .box-support .box-amount input{
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #3b5748;
+    
 }
 
 .wrapper .container .box-donate .box-support .box-amount {
@@ -143,19 +172,46 @@ main .wrapper .container .img-container .logo {
 
 .wrapper .container .box-donate .box-support .box-option {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap; 
     gap: 10px;
 }
 
+.wrapper .container .box-donate .box-support p {
+    font-size: 20px;
+    font-weight: semi-bold;
+}
+
+.wrapper .container .box-donate .box-support .box-option input {
+    color: var(--text-color);
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: hidden;
+    background-color: var(--secondary-color);
+}
+
+.wrapper .container .box-donate .box-support .box-option input:hover {
+    color: var(--secondary-color);
+    background-color: var(--text-color);
+}
+
 .wrapper .container .box-donate .tombol-donate {
-    width: 100px;
+    font-size: 20px;
+    width: 20%;
     color: var(--secondary-color);
     background-color: var(--primary-color);
     border-radius: 20px;
     border-color: var(--secondary-color);
-    border: solid;
+    border-style: solid;
+}
+
+.wrapper .container .box-donate .tombol-donate:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 footer {
