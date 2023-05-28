@@ -30,8 +30,6 @@ class DatabaseConnection {
         } else {
             echo "Error: " . $stmt->error;
         }
-        header("Location: index.html");
-        exit();
     }
 
     public function closeConnection() {
@@ -52,14 +50,10 @@ if (isset($_POST['signup-button'])) {
 
     // Call the signup method to insert the data into the database
     $db->signup($email, $password, $username);
-}
 
-if ($connection->query($sql) === TRUE) {
-    // Sign-up successful, redirect to main menu (home.html) using JavaScript
-    echo '<script>window.location.href = "home.html";</script>';
-} else {
-    // Error occurred, display an error message or redirect to a failure page
-    echo "Error: " . $sql . "<br>" . $connection->error;
+    //redirect tp login.html after successful
+    header("Location: login.html");
+    exit;
 }
 
 // Close the database connection

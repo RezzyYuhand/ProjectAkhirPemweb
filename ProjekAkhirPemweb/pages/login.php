@@ -22,16 +22,19 @@ $password = $_POST['password'];
 $sql = "SELECT * FROM project WHERE (username = '$usernameEmail' OR email = '$usernameEmail') AND password = '$password'";
 $result = $connection->query($sql);
 
-// Check if any rows were returned
-if ($result->num_rows > 0) {
-    // Valid credentials, user is authenticated
-    // Perform any necessary actions (e.g., set session variables, redirect to a dashboard page, etc.)
-    echo "Login successful!";
-} else {
-    // Invalid credentials, show an error message or redirect to a login failure page
-    echo "Invalid username/email or password!";
+// Check if a matching record is found
+if (mysqli_num_rows($result) == 1) {
+    // Redirect to home.html
+    header("Location: home.html");
+    exit;
+} 
+else {
+    echo "Invalid username or password";
 }
-
 // Close the database connection
 $connection->close();
 ?>
+
+
+
+
