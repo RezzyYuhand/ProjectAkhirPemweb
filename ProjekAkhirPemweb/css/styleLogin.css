@@ -43,7 +43,7 @@ main {
     align-items: center;
 }
 
-.navbar .box-navbar .logo {
+.navbar .container .box-navbar img {
     width: 170px;
 }
 

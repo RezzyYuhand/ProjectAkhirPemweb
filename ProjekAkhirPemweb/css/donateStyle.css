@@ -115,6 +115,7 @@
     width: 500px;
     border-radius: 10px;
     background-color: #3b5748;
+    border-color: #ffffff;
 }
 
 .wrapper .container .box-donate .box-support .box-amount {
@@ -132,7 +133,7 @@
     font-size: 20px;
     border-radius: 10px;
     background-color: #3b5748;
-    
+    border-color: #ffffff;
 }
 
 .wrapper .container .box-donate .box-support .box-amount {
