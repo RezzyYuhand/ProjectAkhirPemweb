@@ -14,18 +14,21 @@
 }
 
 main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("../img/mainbackground.jpg");
+    background-color: var(--text-color);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 50px;
+    padding-top: 200px;
+    min-height: 80vh;
 
 }
 
 .navbar {
+    background-image: url("../img/navbarbackground.jpg");
+    background-size:cover;
     padding: 20px 0 20px 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
 }
 
@@ -50,7 +53,7 @@ main {
 
 .navbar .box-navbar .menu {
     display: flex;
-    column-gap: 50px;
+    gap: 50px;
 }
 
 .navbar .box-navbar .menu li {
@@ -73,38 +76,128 @@ main {
     background-color: var(--primary-color);
 }
 
-.judul h1{
-    width: 250px;
-    position: absolute; top: 100px; left: 500px;
-    text-align: center;
-    letter-spacing: 0.3rem;
-    font-weight: semi-bold;
-    color:black;
-    background-color: var(--primary-color);
-    border-radius: 20px;
-    filter: drop-shadow(5px 5px 10px var(--background-color));
+main .wrapper .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
 }
 
-/* .art1 {
-    display: flex;
-    width: 100%;
-    top: 192px;
-    position: absolute;
+main .wrapper {
+    height: 75vh;
+}
+
+main .wrapper .container .judul {
+    color: var(--background-color);
     background-color: var(--primary-color);
-    min-height: 80vh;
+    border-radius: 30px;
+    padding: 5px 40px 5px 40px;
+    filter: drop-shadow(5px 5px 5px var(--background-color));
+}
+
+main .wrapper .container .art1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main .wrapper .container .art1 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .wrapper .container .art1 .content h1 {
+    font-size: 35px;
+}
+
+main .wrapper .container .art1 .content p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+main .wrapper .container .art1 a {
+    color: var(--background-color);
+}
+
+.article2 {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    width: 100%;
+    height: 80vh;
+    border-radius: 30px 30px 0 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px 50px 0 0;
-} */
-
-.art1 h1{
-    color: black;
-    font-size: 40px;
-    position: absolute; top: 25px; left: 15px;
 }
 
-.art1 p {
-    color: #000;
-    font-size: 25px;
-    position: absolute; top: 350px; left: 15px;
+.article2 .container .art2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.article2 .container .art2 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article2 .container .art2 .content h1 {
+    font-size: 35px;
+    text-align: end;
+}
+
+.article2 .container .art2 .content p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.article2 .container .art2 a {
+    color: var(--text-color);
+}
+
+.article3 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article3 .container .art3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.article3 .container .art3 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article3 .container .art3 .content h1 {
+    font-size: 35px;
+}
+
+.article3 .container .art3 .content p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.article3 .container .art3 a {
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    background-color: var(--secondary-color);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-weight: semi-bold;
 }
