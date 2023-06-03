@@ -14,7 +14,7 @@
 }
 
 main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),url("../img/mainbackground.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("../img/mainbackground.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ main {
 }
 
 .wrapper {
-    min-height: 120vh;
+    min-height: 145vh;
 }
 
 .navbar {
@@ -76,14 +76,14 @@ main {
 }
 
 form {
-        height: 500px;
-        width: 400px;
-        background-color: var(--secondary-color);
-        position: absolute;
-        top: 135px;
-        border-radius: 20px;
-        backdrop-filter: blur(10px);
-        padding: 50px 35px;
+    height: 565px;
+    width: 400px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 135px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 50px 35px;
 }
 
 .login {
@@ -97,7 +97,7 @@ form {
     margin-bottom: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: center ;
+    justify-content: center;
     column-gap: 300px;
 }
 
@@ -182,17 +182,14 @@ form {
 }
 
 .login .container form .tc {
- position: absolute;
- top: 340px;
+    position: absolute;
+    top: 340px;
 }
 
-.login .container form .tc input {
+.login .container form .tc input {}
 
-}
+.login .container form .tc label {}
 
-.login .container form .tc label {
-
-}
 .login .container form .signup {
     background-color: var(--primary-color);
     padding: 10px 30px 10px 30px;
@@ -203,8 +200,21 @@ form {
     border-radius: 25px;
     position: absolute;
     top: 410px;
-    right: 145px; 
+    right: 135px;
     cursor: pointer;
+}
+
+.login .container form .already p {
+    position: absolute;
+    top: 485px;
+    right: 100px;
+}
+
+.login .container form .already a {
+    position: absolute;
+    color: var(--text-color);
+    top: 515px;
+    right: 185px;
 }
 
 footer {
