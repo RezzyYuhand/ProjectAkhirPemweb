@@ -46,25 +46,25 @@
   <main>
     <div class="wrapper">
       <div class="container">
-        <form class="box-donate" action="" method="post">
+        <form class="box-donate" action="donate.php" method="post">
           <div class="box-support">
             <h1>SUPPORT THE FOREST</h1>
             <div class="box-nama">
-              <label for="name">Name :</label>
+              <label for="username">Username:</label>
               <input
                 type="text"
-                name="name"
-                id="name"
-                placeholder="input your name"
+                name="username"
+                id="username"
+                placeholder="Input your username"
               />
             </div>
             <div class="box-amount">
-              <label for="amount">Set Amount :</label>
+              <label for="amount">Set Amount:</label>
               <input
                 type="number"
                 name="amount"
                 id="amount"
-                placeholder="input your amount"
+                placeholder="Input your amount"
               />
             </div>
             <p>or select</p>
@@ -79,7 +79,7 @@
               </div>
             </div>
           </div>
-          <input class="tombol-donate" type="submit" value="DONATE" />
+          <input class="tombol-donate" type="submit" name="tombol-donate" value="DONATE" />
         </form>
         <div class="img-container">
           <img class="logo" src="../img/logoGG-01.png" alt="" />
